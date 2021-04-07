@@ -38,6 +38,7 @@
         font-weight: bold;
         margin-bottom: 1.8rem;
         font-size: $mid-font-size;
+        font-color:linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
 
         @include respond(phone) {
           font-size: 2rem;

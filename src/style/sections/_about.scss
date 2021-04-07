@@ -1,15 +1,48 @@
+
+.bigcontainer {
+
+    
+    font-weight: 700;
+    margin-bottom: 3.2rem;
+    text-align: left;
+}
+.bigcontainer h1 {
+  font-size: 3rem;
+  padding: 0.5rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-align: left;
+  overflow: hidden;
+}
+.typed-text {
+  color: #FFA500;
+}
+.bigcontainer h1 span.cursor {
+  display: inline-block;
+  background-color: #ccc;
+
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+.bigcontainer h1 span.cursor.typing {
+  animation: none;
+}
+@keyframes blink {
+  0%  { background-color: #ccc; }
+  49% { background-color: #ccc; }
+  50% { background-color: transparent; }
+  99% { background-color: transparent; }
+  100%  { background-color: #ccc; }
+}
 #about {
   background-color: $primary-color;
-  background-image: linear-gradient(
-    135deg,
-    $primary-color 0%,
-    $secondary-color 100%
-  );
+  background-image: linear-gradient(to right, white , purple);
   color: $white-color;
   height: 100%;
   border-top: 0px;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  clip-path: polygon(0 0, 100% 0%, 100% 80%, 0% 100%);
   padding-bottom: 10%;
 
   @include respond(tab-land) {
