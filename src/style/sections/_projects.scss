@@ -23,6 +23,23 @@
         margin-bottom: 4rem;
       }
     }
+    .box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+    .box img{
+    width: 150px;
+    height:150px;
+    margin:20px;
+    transition:width 0.1s, height 0.1s;
+    transition-delay: 0.2s;
+    transition-duration: 0.4s;
+    }
+    .box img:hover{
+    width: 180px;
+    height: 180px;
+    }
 
     &__text {
       text-align: left;
